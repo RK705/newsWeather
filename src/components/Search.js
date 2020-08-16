@@ -16,6 +16,7 @@ function Search ({ handleInput, search ,handleInput2, search2 }) {
 				className="searchbox" 
 				onChange={handleInput2}
 				onKeyPress={search}
+				
 			/>
 			
 		</section>
