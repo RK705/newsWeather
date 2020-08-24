@@ -18,7 +18,8 @@ class App extends Component {
       lon:0,
       temp:0,
       desc:'',
-      loading:false
+      loading:false,
+      notFound:false
      }
      
   }
@@ -56,7 +57,8 @@ search = (e) => {
         
         this.setState({
           ...this.state,
-          loading:false
+          loading:false,
+          notFound:true
 
         })
 
@@ -116,7 +118,9 @@ async componentDidMount(){
                                  </div>
                                : <ShowData state={this.state.articles}/> 
            }
+           
       </div>
+
      
     </div>
   );
